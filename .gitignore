@@ -1,0 +1,7 @@
+# Ignoring stuff from config which are not needed
+nodemodules
+raycast
+btop
+configstore
+jgit
+zed 
