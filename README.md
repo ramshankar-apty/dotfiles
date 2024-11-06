@@ -24,6 +24,10 @@ My config files for macOS.
 ** - Will be installed by an IT admin.
 
 ```sh
+
+# To run a shell file, run the below script
+xattr -d com.apple.quarantine ./<SCRIPT_NAME>.sh
+
 # Enable Rosetta (Reference: https://devzilla.io/using-nodejs-14-with-mac-silicon-m1)
 /usr/sbin/softwareupdate --install-rosetta --agree-to-license
 
