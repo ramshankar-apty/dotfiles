@@ -30,6 +30,10 @@ xattr -d com.apple.quarantine ./<SCRIPT_NAME>.sh
 
 # Enable Rosetta (Reference: https://devzilla.io/using-nodejs-14-with-mac-silicon-m1)
 /usr/sbin/softwareupdate --install-rosetta --agree-to-license
+echo "search for terminal in applications > get info > open terminal with Rosetta"
+
+# Install cli tools after installing xcode for node-gyp
+xcode-select --install
 
 # Install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -48,5 +52,14 @@ oh-my-posh font install meslo
 echo "installed meslo nerd font"
 ```
 
+### Setup pgAdmin
+
+Create a new server with the details below. All the database schema's will be available in this server.
+```
+name - postgres
+Host Name/Adddress - localhost
+Port - 5432
+Username - postgres
+```
 
 - [Installing Node.js 14 in macOS (Apple Silicon)](https://stackoverflow.com/questions/65342769/install-node-on-m1-mac)
