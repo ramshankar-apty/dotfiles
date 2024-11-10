@@ -24,7 +24,6 @@ My config files for macOS.
 ** - Will be installed by an IT admin.
 
 ```sh
-
 # To run a shell file, run the below script
 xattr -d com.apple.quarantine ./<SCRIPT_NAME>.sh
 
@@ -62,4 +61,17 @@ Port - 5432
 Username - postgres
 ```
 
-- [Installing Node.js 14 in macOS (Apple Silicon)](https://stackoverflow.com/questions/65342769/install-node-on-m1-mac)
+- [Solve dyld library not loaded](https://gist.github.com/berkedel/d1fc6d13651c16002f64653096d1fded)
+
+### Issues you may run into
+
+The issues here are mostly focused towards Apple silicon chips.
+
+#### Installing Node.js 14 in Apple Silicon
+
+You can refer this [stackoverflow thread](https://stackoverflow.com/questions/65342769/install-node-on-m1-mac) to enable rosetta on mac.
+You might have to enable Rosetta in the terminal by enabling it in terminal's `get info` panel.
+
+### dyld <version> not loaded
+This is dependency that node uses. You can check out this [gist](brew uninstall --ignore-dependencies node icu4c
+brew install node) to uninstall icu4c which contains dyld or reinstall it.
