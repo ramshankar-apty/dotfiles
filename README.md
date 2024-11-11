@@ -67,11 +67,11 @@ Username - postgres
 
 The issues here are mostly focused towards Apple silicon chips.
 
-#### Installing Node.js 14 in Apple Silicon
+####1. Installing Node.js 14 in Apple Silicon
 
 You can refer this [stackoverflow thread](https://stackoverflow.com/questions/65342769/install-node-on-m1-mac) to enable rosetta on mac.
 You might have to enable Rosetta in the terminal by enabling it in terminal's `get info` panel.
 
-### dyld <version> not loaded
+####2. dyld <version> not loaded
 This is dependency that node uses. You can check out this [gist](brew uninstall --ignore-dependencies node icu4c
 brew install node) to uninstall icu4c which contains dyld or reinstall it.
