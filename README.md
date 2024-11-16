@@ -41,10 +41,13 @@ xcode-select --install
 brew install btop
 echo "installed btop"
 
+# Install lsd
+brew install lsd
+echo "Installed lsd: a better `ls` command"
+
 # Install oh-my-posh
 brew install jandedobbeleer/oh-my-posh/oh-my-posh
 echo "installed oh-my-posh"
-
 
 # Install meslo font (VSCode: "terminal.integrated.fontFamily": "MesloLGM Nerd Font")
 oh-my-posh font install meslo
