@@ -45,6 +45,10 @@ echo "installed btop"
 brew install lsd
 echo "Installed lsd: a better `ls` command"
 
+# Install bat
+brew install bat
+echo "Installed bat: a better `cat` command"
+
 # Install oh-my-posh
 brew install jandedobbeleer/oh-my-posh/oh-my-posh
 echo "installed oh-my-posh"
